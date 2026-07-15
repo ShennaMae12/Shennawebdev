@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Explore the Philippines </title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    
+        .nav-link.active {
+            color: #db2a2a !important;
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0; font-family:Arial, Helvetica, sans-serif; color: #2c3e50; background-color: #faf6f2; line-height: 1.6; transition: background-color 0.5s ease;">
+
+    <!-- Navigation Bar -->
+    <nav style="background-color: #ffffff; padding: 15px 20px; 
+    display: flex; justify-content: space-between; align-items: center; 
+    position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+        <div style="color: #1a2a3a; font-size: 24px; font-weight: bold; 
+        letter-spacing: 1px;">Explore the Philippines</div>
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 50px;">
+            <li><a href="#home" class="nav-link" onclick="showSection('home')" style="color: #1a2a3a; text-decoration: none; font-weight: 600; font-size: 16px; transition: color 0.3s;">Home</a></li>
+            <li><a href="#explore-destinations" class="nav-link" onclick="showSection('explore-destinations')" style="color: #1a2a3a; text-decoration: none; font-weight: 600; font-size: 16px; transition: color 0.3s;">Destinations</a></li>
+            <li><a href="#things-to-do" class="nav-link" onclick="showSection('things-to-do')" style="color: #1a2a3a; text-decoration: none; font-weight: 600; font-size: 16px; transition: color 0.3s;">Things to Do</a></li>
+            <li><a href="#travel-tips" class="nav-link" onclick="showSection('travel-tips')" style="color: #1a2a3a; text-decoration: none; font-weight: 600; font-size: 16px; transition: color 0.3s;">Travel Tips</a></li>
+            <li><a href="#about-us" class="nav-link" onclick="showSection('about-us')" style="color: #1a2a3a; text-decoration: none; font-weight: 600; font-size: 16px; transition: color 0.3s;">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content Sections Wrapper -->
+    <div id="content-wrapper">
+        
+        <!-- Home / Header Section -->
+        <header id="home" class="content-section" style="background-image: linear-gradient(rgba(26, 42, 58, 0.75), rgba(52, 152, 219, 0.5)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200'); background-size: cover; background-position: center; color: #ffffff; padding: 140px 20px; text-align: center; transition: background-image 1s ease-in-out; min-height: 50vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h1 style="font-size: 55px; margin-top: 0; margin-bottom: 15px; font-weight: 700; letter-spacing: -1px;">Welcome to Explore the Philippines </h1>
+            <p style="font-size: 19px; margin-bottom: 30px; opacity: 0.95; max-width: 650px; margin-left: auto; margin-right: auto; font-weight: 300;">Your gateway to stunning islands, vibrant culture, unforgettable adventures, and the warm hospitality of the Filipino people.</p>
+            <a href="#explore-destinations" onclick="showSection('explore-destinations')" style="background-color: #db2a2a; color: #fff; padding: 14px 35px; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 16px; letter-spacing: 0.5px; box-shadow: 0 4px 15px rgba(219, 42, 42, 0.4);">Start Exploring</a>
+        </header>
+
+        <main style="max-width: 1140px; margin: 0 auto; padding: 20px 20px 50px 20px;">
+            
+            <!-- Explore Destinations Section -->
+            <section id="explore-destinations" class="content-section" style="padding-top: 40px; margin-bottom: 80px; display: none;">
+                <h2 style="color: #1a2a3a; font-size: 32px; margin-top: 0; margin-bottom: 10px; font-weight: 700;">📍 Explore Destinations</h2>
+                <p style="font-size: 16px; color: #64748b; margin-top: 0; margin-bottom: 40px; max-width: 700px;">
+                    Discover the beauty of the archipelago from north to south. Explore breathtaking beaches, historic cities, stunning mountains, and unforgettable regional adventures.
+                </p>
+
+                <!-- Luzon Section -->
+                <div id="luzon" style="margin-bottom: 60px;">
+                    <span style="background-color: rgba(52, 152, 219, 0.1); color: #3498db; padding: 6px 16px; border-radius: 20px; font-weight: bold; font-size: 14px; display: inline-block;">LUZON REGION</span>
+                    <p style="font-size: 15px; color: #556b82; margin-top: 12px; margin-bottom: 25px; max-width: 800px;">
+                        As the largest island group in the archipelago, Luzon is a brilliant mix of historical landmarks, rich high-altitude cultures, and dramatic natural wonders.
+                    </p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                        <div style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.02);">
+                            <img src="Palawan.jpg" ; style="width: 100%; height: 140px; object-fit: cover;">
+                            <div style="padding: 15px;">
+                                <h4 style="margin: 0 0 5px 0; color: #1a2a3a; font-size: 16px; font-weight: 700;">Palawan</h4>
+                                <p style="margin: 0; color: #64748b; font-size: 13px; line-height: 1.5;">World-famous for jaw-dropping limestone cliffs and hidden lagoons in El Nido & Coron.</p>
+                            </div>
+                        </div>
+                        <div style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.02);">
+                            <img src="Rice Terraces.jpg" ; style="width: 100%; height: 140px; object-fit: cover;">
+                            <div style="padding: 15px;">
+                                <h4 style="margin: 0 0 5px 0; color: #1a2a3a; font-size: 16px; font-weight: 700;">Rice Terraces</h4>
+                                <p style="margin: 0; color: #64748b; font-size: 13px; line-height: 1.5;">Ancient, hand-carved agricultural marvels built into the mountains over 2,000 years ago.</p>
+                            </div>
+                        </div>
+                        <div style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.02);">
+                            <img src="Vigan.jpeg" ; style="width: 100%; height: 140px; object-fit: cover;">
+                            <div style="padding: 15px;">
+                                <h4 style="margin: 0 0 5px 0; color: #1a2a3a; font-size: 16px; font-weight: 700;">Vigan City</h4>
+                                <p style="margin: 0; color: #64748b; font-size: 13px; line-height: 1.5;">A beautifully preserved UNESCO site featuring Spanish-colonial cobblestone streets.</p>
+                            </div>
+                        </div>
+                        <div style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.02);">
+                            <img src="BagSag.jpg"; style="width: 100%; height: 140px; object-fit: cover;">
+                            <div style="padding: 15px;">
+                                <h4 style="margin: 0 0 5px 0; color: #1a2a3a; font-size: 16px; font-weight: 700;">Baguio & Sagada</h4>
+                                <p style="margin: 0; color: #64748b; font-size: 13px; line-height: 1.5;">The breezy "Summer Capital" paired with mystical mountain caves and hanging coffins.</p>
+                            </div>
+                        </div>
+                        <div style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.02);">
+                            <img src="Mayon.jpg"; style="width: 100%; height: 140px; object-fit: cover;">
+                            <div style="padding: 15px;">
+                                <h4 style="margin: 0 0 5px 0; color: #1a2a3a; font-size: 16px; font-weight: 700;">Mount Mayon</h4>
+                                <p style="margin: 0; color: #64748b; font-size: 13px; line-height: 1.5;">Celebrated globally for its breathtakingly perfect, symmetrical volcanic cone shape.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visayas Section -->
+                <div id="visayas" style="margin-bottom: 60px;">
+                    <span style="background-color: rgba(230, 126, 34, 0.1); color: #e67e22; padding: 6px 16px; border-radius: 20px; font-weight: bold; font-size: 14px; display: inline-block;">VISAYAS REGION</span>
+                    <p style="font-size: 15px; color: #556b82; margin-top: 12px; margin-bottom: 25px; max-width: 800px;">
+                        The central heartbeat of the country, the Visayas is an island-hopper's ultimate paradise, boasting pristine white sands and diverse marine life arrays.
+                    </p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                        <div style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.02);">
+                            <img src="Boracay.webp" ; style="width: 100%; height: 140px; object-fit: cover;">
+                            <div style="padding: 15px;">
+                                <h4 style="margin: 0 0 5px 0; color: #1a2a3a; font-size: 16px; font-weight: 700;">Boracay Island</h4>
+                                <p style="margin: 0; color: #64748b; font-size: 13px; line-height: 1.5;">Iconic for its legendary White Beach, award-winning sands, and beachside nightlife.</p>
+                            </div>
+                        </div>
+                        <div style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.02);">
+                            <img src="Camotes Island.webp" ; style="width: 100%; height: 140px; object-fit: cover;">
+                            <div style="padding: 15px;">
+                                <h4 style="margin: 0 0 5px 0; color: #1a2a3a; font-size: 16px; font-weight: 700;">Camotes Island</h4>
+                                <p style="margin: 0; color: #64748b; font-size: 13px; line-height: 1.5;">Camotes Island is a hidden gem in Cebu known for its white-sand beaches, crystal-clear waters, caves, and peaceful atmosphere—perfect for a relaxing getaway.</p>
+                            </div>
+                        </div>
+                        <div style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.02);">
+                            <img src="Bohol.jpg"; style="width: 100%; height: 140px; object-fit: cover;">
+                            <div style="padding: 15px;">
+                                <h4 style="margin: 0 0 5px 0; color: #1a2a3a; font-size: 16px; font-weight: 700;">Bohol</h4>
+                                <p style="margin: 0; color: #64748b; font-size: 13px; line-height: 1.5;">Home to the unusual geological Chocolate Hills and wide-eyed native Tarsiers.</p>
+                            </div>
+                        </div>
+                        <div style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.02);">
+                            <img src="Siquijor.jpg"; style="width: 100%; height: 140px; object-fit: cover;">
+                            <div style="padding: 15px;">
+                                <h4 style="margin: 0 0 5px 0; color: #1a2a3a; font-size: 16px; font-weight: 700;">Siquijor Island</h4>
+                                <p style="margin: 0; color: #64748b; font-size: 13px; line-height: 1.5;">Mystical and serene, loved for its multi-tiered turquoise waterfalls and quiet beach life.</p>
+                            </div>
+                        </div>
+                        <div style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.02);">
+                            <img src="Kalanggaman.jpg"; style="width: 100%; height: 140px; object-fit: cover;">
+                            <div style="padding: 15px;">
+                                <h4 style="margin: 0 0 5px 0; color: #1a2a3a; font-size: 16px; font-weight: 700;">Kalanggaman</h4>
+                                <p style="margin: 0; color: #64748b; font-size: 13px; line-height: 1.5;">A postcard-perfect, untouched virgin slice of paradise featuring a long, striking sandbar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mindanao Section -->
+                <div id="mindanao">
+                    <span style="background-color: rgba(46, 204, 113, 0.1); color: #2ecc71; padding: 6px 16px; border-radius: 20px; font-weight: bold; font-size: 14px; display: inline-block;">MINDANAO REGION</span>
+                    <p style="font-size: 15px; color: #556b82; margin-top: 12px; margin-bottom: 25px; max-width: 800px;">
+                        Mindanao represents the country's rugged frontier, overflowing with majestic, raw natural beauty, powerful waterfalls, and rich local cultures.
+                    </p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                        <div style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.02);">
+                            <img src="Siargao.png" ; style="width: 100%; height: 140px; object-fit: cover;">
+                            <div style="padding: 15px;">
+                                <h4 style="margin: 0 0 5px 0; color: #1a2a3a; font-size: 16px; font-weight: 700;">Siargao Island</h4>
+                                <p style="margin: 0; color: #64748b; font-size: 13px; line-height: 1.5;">The undisputed surfing capital, internationally famous for its legendary "Cloud 9" wave.</p>
+                            </div>
+                        </div>
+                        <div style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.02);">
+                            <img src="Camiguin.jpg"; style="width: 100%; height: 140px; object-fit: cover;">
+                            <div style="padding: 15px;">
+                                <h4 style="margin: 0 0 5px 0; color: #1a2a3a; font-size: 16px; font-weight: 700;">Camiguin</h4>
+                                <p style="margin: 0; color: #64748b; font-size: 13px; line-height: 1.5;">Known as the "Island Born of Fire," packed with volcanoes and a unique sunken cemetery.</p>
+                            </div>
+                        </div>
+                        <div style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.02);">
+                            <img src="Davao.jpg" ; style="width: 100%; height: 140px; object-fit: cover;">
+                            <div style="padding: 15px;">
+                                <h4 style="margin: 0 0 5px 0; color: #1a2a3a; font-size: 16px; font-weight: 700;">Davao City</h4>
+                                <p style="margin: 0; color: #64748b; font-size: 13px; line-height: 1.5;">A clean urban hub sitting near Mt. Apo and home to the majestic Philippine Eagle.</p>
+                            </div>
+                        </div>
+                        <div style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.02);">
+                            <img src="Cagayan.jpg" ; style="width: 100%; height: 140px; object-fit: cover;">
+                            <div style="padding: 15px;">
+                                <h4 style="margin: 0 0 5px 0; color: #1a2a3a; font-size: 16px; font-weight: 700;">Cagayan de Oro</h4>
+                                <p style="margin: 0; color: #64748b; font-size: 13px; line-height: 1.5;">The thrilling whitewater rafting capital boasting wild river rapids and lush gorges.</p>
+                            </div>
+                        </div>
+                        <div style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.02);">
+                            <img src="Enchanted.jpg"; style="width: 100%; height: 140px; object-fit: cover;">
+                            <div style="padding: 15px;">
+                                <h4 style="margin: 0 0 5px 0; color: #1a2a3a; font-size: 16px; font-weight: 700;">Enchanted River</h4>
+                                <p style="margin: 0; color: #64748b; font-size: 13px; line-height: 1.5;">A stunningly deep, sapphire-blue river shrouded in local mystery and folklore.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Things to Do Section -->
+            <section id="things-to-do" class="content-section" style="padding-top: 40px; margin-bottom: 80px; min-height: 60vh; display: none;">
+                <h2 style="color: #1a2a3a; font-size: 32px; margin-top: 0; margin-bottom: 10px; font-weight: 700;">✨ Things to Do</h2>
+                <p style="font-size: 16px; color: #64748b; margin-bottom: 30px; max-width: 700px;"> Experience the best of the Philippines through exciting adventures, cultural experiences, and unforgettable moments.</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">
+                    <div style="background-color: #ffffff; padding: 25px 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.02); text-align: center;">
+                        <span style="font-size: 36px;">🏝️</span>
+                        <h4 style="color: #1a2a3a; margin: 12px 0 8px 0; font-size: 18px; font-weight: 700;">Island Hopping</h4>
+                        <p style="font-size: 14px; color: #64748b; margin: 0; line-height: 1.5;">Hire a traditional outrigger bangka boat to discover hidden lagoons, secret beaches, and coral reefs.</p>
+                    </div>
+                    <div style="background-color: #ffffff; padding: 25px 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.02); text-align: center;">
+                        <span style="font-size: 36px;">🐋</span>
+                        <h4 style="color: #1a2a3a; margin: 12px 0 8px 0; font-size: 18px; font-weight: 700;">Diving & Snorkeling</h4>
+                        <p style="font-size: 14px; color: #64748b; margin: 0; line-height: 1.5;">Swim alongside massive sea turtles in Apo Island or marvel at billions of fish in the Moalboal Sardine Run.</p>
+                    </div>
+                    <div style="background-color: #ffffff; padding: 25px 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.02); text-align: center;">
+                        <span style="font-size: 36px;">🍲</span>
+                        <h4 style="color: #1a2a3a; margin: 12px 0 8px 0; font-size: 18px; font-weight: 700;">Culinary Food Tours</h4>
+                        <p style="font-size: 14px; color: #64748b; margin: 0; line-height: 1.5;">Taste savory local specialties like Adobo, crispy Lechon, and refresh yourself with a cold bowl of Halo-Halo.</p>
+                    </div>
+                    <div style="background-color: #ffffff; padding: 25px 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.02); text-align: center;">
+                        <span style="font-size: 36px;">🎭</span>
+                        <h4 style="color: #1a2a3a; margin: 12px 0 8px 0; font-size: 18px; font-weight: 700;">Cultural Festivals</h4>
+                        <p style="font-size: 14px; color: #64748b; margin: 0; line-height: 1.5;">Dance on the lively streets during world-famous cultural events like Sinulog, Ati-Atihan, or MassKara.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Travel Tips Section -->
+            <section id="travel-tips" class="content-section" style="padding-top: 40px; margin-bottom: 80px; min-height: 60vh; display: none;">
+                <h2 style="color: #1a2a3a; font-size: 32px; margin-top: 0; margin-bottom: 10px; font-weight: 700;">🧳 Travel Tips</h2>
+                <p style="font-size: 16px; color: #64748b; margin-bottom: 30px; max-width: 700px;"> Planning a trip to the Philippines? These essential tips will help you enjoy a safe, comfortable, and memorable tropical island adventure.</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
+                    <div style="background-color: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.02);">
+                        <h4 style="font-size: 17px; color:#1a2a3a; margin-top: 0; margin-bottom: 10px;">☀️ Best Time to Visit</h4>
+                        <p style="font-size: 14px; color: #556b82; margin: 0 0 8px 0;"><strong>Dry Season (Dec - May):</strong> Sunny and perfect for island tours.</p>
+                        <p style="font-size: 14px; color: #556b82; margin: 0;"><strong>Rainy Season (Jun - Nov):</strong> Expect downpours; check updates.</p> 
+                    </div>
+
+                    <div style="background-color: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.02);">
+                        <h4 style="font-size: 17px; color:#1a2a3a; margin-top: 0; margin-bottom: 10px;">💵 Cash & Currency</h4>
+                        <p style="font-size: 14px; color: #556b82; margin: 0; line-height: 1.5;">Uses Philippine Peso (PHP). Cards work in cities, but carry cash for small provincial trikes, markets, and local meals.</p>
+                    </div>
+
+                    <div style="background-color: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.02);">
+                        <h4 style="font-size: 17px; color:#1a2a3a; margin-top: 0; margin-bottom: 10px;">🚲 Getting Around</h4>
+                        <p style="font-size: 14px; color: #556b82; margin: 0; line-height: 1.5;">Ride colorful Jeepneys or local motorized Tricycles for short transit. Use commercial flights or ferries for island hopping.</p>
+                    </div>
+
+                    <div style="background-color: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.02);">
+                        <h4 style="font-size: 17px; color:#1a2a3a; margin-top: 0; margin-bottom: 10px;">🗣️ Communication</h4>
+                        <p style="font-size: 14px; color: #556b82; margin: 0; line-height: 1.5;">English is spoken everywhere. Saying a friendly <em>"Salamat"</em> (Thank you) goes a long way with the locals!</p>
+                    </div>
+                </div>
+            </section>
+
+           <!-- About Us Section -->
+            <section id="about-us" class="content-section" style="background-color: #ffffff; padding: 50px 40px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.02); border: 1px solid rgba(0,0,0,0.01); margin-bottom: 40px; display: none;">
+                <h2 style="color: #1a2a3a; font-size: 32px; margin-top: 0; margin-bottom: 15px; font-weight: 700;">👋 About Us</h2>
+                
+                <p style="font-size: 16px; color: #556b82; margin-bottom: 15px; line-height: 1.6;">
+                    Welcome to Explore the Philippines!
+                </p>
+
+                <p style="font-size: 16px; color: #556b82; margin-bottom: 15px; line-height: 1.6;">
+                    Explore the Philippines is a website dedicated to showcasing the country's breathtaking destinations, rich culture, and unforgettable travel experiences. Our mission is to inspire travelers to discover the beauty of the Philippines—from its world-famous beaches and majestic mountains to its vibrant festivals and delicious local cuisine.
+                </p>
+
+                <p style="font-size: 16px; color: #556b82; margin-bottom: 15px; line-height: 1.6;">
+                    Whether you're planning your next vacation or simply exploring the country's natural wonders, this website provides information on popular destinations, exciting activities, and useful travel tips to help you make the most of your journey.
+                </p>
+
+                <p style="font-size: 16px; color: #556b82; margin-bottom: 0; line-height: 1.6;">
+                    Thank you for visiting Explore the Philippines. We hope this website encourages you to experience the beauty, culture, and warm hospitality that make the Philippines truly more fun!
+                </p>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background-color: #1a2a3a; color: #fff; padding: 40px 20px; text-align: center; font-size: 14px;">
+        <p style="margin: 0 0 10px 0; opacity: 0.8; font-weight: 600;">&copy; 2026 Explore the Philippines. All Rights Reserved.</p>
+        <p style="margin: 0; opacity: 0.5; font-size: 12px;">Meticulously crafted for unforgettable journeys.</p>
+    </footer>
+
+    
+    <script>
+        // show only sect
+        function showSection(sectionId) {
+        
+            const sections = document.querySelectorAll('.content-section');
+            
+        
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+    
+            const activeSection = document.getElementById(sectionId);
+            if (activeSection) {
+            
+                if (sectionId === 'home') {
+                    activeSection.style.opacity = '0';
+                    activeSection.style.display = 'flex';
+                     
+                    // fade in effect
+
+                    setTimeout(() => { activeSection.style.opacity = '1'; }, 50);
+                } else {
+                    activeSection.style.display = 'block';
+                }
+            }
+
+            
+            const links = document.querySelectorAll('.nav-link');
+            links.forEach(link => {
+                link.classList.remove('active');
+                if(link.getAttribute('href') === '#' + sectionId) {
+                    link.classList.add('active');
+                }
+            });
+
+        
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        //header
+
+        const images = [
+            "https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=375,height=375,dpr=2/tour_img/db638f32f3b55382180e280169dab6f12a8f396fec01b31787bda522f652bc4d.png",
+            "https://cdn.forevervacation.com/uploads/attraction/camotes-islands-4533.webp",
+            "https://www.kkday.com/en-ph/blog/wp-content/uploads/ph_boracay_island_1497294326-1170x680.jpg"
+        ];
+
+        let currentIndex = 0;
+        const header = document.getElementById("home");
+
+        function changeBgImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            header.style.backgroundImage = `linear-gradient(rgba(26, 42, 58, 0.75), rgba(52, 152, 219, 0.5)), url('${images[currentIndex]}')`;
+        }
+
+        setInterval(changeBgImage, 5000);
+    </script>
+
+</body>
+</html>
